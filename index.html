@@ -1,0 +1,67 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <script>
+        function printDiv() {
+            //var divContents = document.getElementById("GFG").innerHTML;
+			var divContents1 = document.getElementById("tt").innerHTML;
+			//var divContents2 = document.getElementById("rs").innerHTML;
+			var divContents3 = document.getElementById("exampleFormControlTextarea1").innerHTML;
+            var a = window.open();//'', '', 'height=500, width=500'
+            a.document.write('<html>');
+            a.document.write('<body > <h1>الحريف</h1><br>'); //<img src="R.jpg" > 
+            a.document.write(divContents1);
+			a.document.write(divContents3);
+            a.document.write('</body></html>');
+            a.document.close();
+            a.print();
+        }
+    </script>
+	
+<body>
+<div id="GFG">
+<form>
+  <div class="form-group">
+    <label dir="rtl" lang="ar"  for="tt">الاسم واللقب  </label>
+    <input type="email" class="form-control" id="tt" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label dir="rtl" lang="ar" >المؤسسة</label>
+    <select class="form-control" id="rs">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label dir="rtl" lang="ar" for="exampleFormControlSelect2">المؤسسة</label>
+    <select multiple class="form-control" id="exampleFormControlSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label dir="rtl" lang="ar" for="exampleFormControlTextarea1">الملاحظة</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
+<!--<p dir="rtl" lang="ar" style="font-size:20px;">رَبٍّ زِدْنٍي عِلمًا</p>-->
+</div>
+<!--<input type="button" value="Imprimer cette page" onClick="window.print()">-->
+   <input type="button" value="click" onclick="printDiv()"> 
+   <div id="toolbar"> 
+   <button type='button' class='btn btn-warning btn-lg' onclick="printDiv()" ><span class='glyphicon glyphicon-print' aria-hidden='true'></span>Imprimer</button> 
+</div> 
+</body>
+</html>
